@@ -1,0 +1,45 @@
+.hero {
+  height: 100vh;
+  min-height: 768px;
+  background: url("../img/mobile-hero-background.png") center top;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  padding-top: 20vh;
+
+  @media (min-width: 768px) {
+    background: none;
+    height: auto;
+    min-height: auto;
+    padding-top: 0;
+  }
+
+  &__svg {
+    position: absolute;
+    bottom: -4px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  h2 {
+    font-size: $large-font-size;
+    color: $color-white;
+    text-shadow: 0 3px 10px $color-light-gray;
+    text-align: center;
+    margin: 40vh 10%;
+    line-height: 50px;
+
+    @media (min-width: 768px) {
+      background: none;
+      margin: 10px 0;
+      font-size: 2.25rem;
+      color: $color-red;
+      text-shadow: none;
+      text-align: left;
+    }
+
+  }
+}

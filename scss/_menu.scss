@@ -1,0 +1,82 @@
+.menu-nav {
+    justify-content: space-evenly;
+    display: flex;
+
+    @media (min-width: 768px) {
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    &__item {
+        margin: 20px 15px;
+
+        @media (max-width: 768px) {
+            display: inline-block;
+            justify-content: space-evenly;
+            margin: 0;
+        }
+
+        &--link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 auto;
+            margin: 20px auto;
+            display: block;
+            padding: 15px;
+
+            @media (max-width: 768px) {
+                margin: 10px 0;
+                display: inline-block;
+            }
+
+            &:hover {
+                background: $color-red;
+            }
+
+            .home {
+                background: url('../img/home.svg') center top 100% no-repeat;
+                width: 20px;
+                height: 21px;
+                display: block;
+                background-size: cover;
+            }
+
+            .briefcase {
+                background: url('../img/briefcase.svg') center top 100% no-repeat;
+                width: 22px;
+                height: 20px;
+                display: block;
+                background-size: cover;
+            }
+
+            .compass {
+                background: url('../img/compass.svg') center top 100% no-repeat;
+                width: 22px;
+                height: 22px;
+                display: block;
+                background-size: cover;
+            }
+
+            .bell {
+                background: url('../img/bell.svg') center top 100% no-repeat;
+                width: 20px;
+                height: 22px;
+                display: block;
+                background-size: cover;
+            }
+
+            .gear {
+                background: url('../img/gear.svg') center top 100% no-repeat;
+                width: 22px;
+                height: 22px;
+                display: block;
+                background-size: cover;
+            }
+        }
+    }
+
+    .active {
+        background: $color-red;
+    }
+}

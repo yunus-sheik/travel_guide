@@ -1,0 +1,23 @@
+/*Colors*/
+$primary-color :#E7EDF6;
+$secondary-color:#C5D3E8;
+$color-white:#fff;
+$color-light-gray:#8a95a5;
+$color-blue: #2B2ECF;
+$color-light-blue:#652BCF;
+$color-red: #FF0066;
+$color-gray: #7F8A9C;
+$color-yellow:#F6C937;
+$color-dark:#32261A;
+$color-bluishgreen :#66efc1;
+
+/*font size*/
+$large-font-size: 2.625rem;
+$medium-font-size: 1.5rem;
+$small-font-size:1.125rem;
+$xsmall-font-size:0.875rem;
+
+/*mixin*/
+@mixin transition-ease {
+    transition: all 0.5 ease-in-out;
+}

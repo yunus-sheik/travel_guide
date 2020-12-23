@@ -1,0 +1,183 @@
+.card-view__button{
+    display: inline-block;
+    padding: 10px 5px;
+    background: $color-white;
+    border-radius: 20px;
+    margin-top: -50px;
+    float: right;
+    position: relative;
+    z-index: 9;
+    @media (max-width: 768px) {
+        margin-right: -42px;
+        right: 50%;        
+    } 
+    &--grid,&--list{
+        margin:2px 5px;        
+        padding: 9px 2px 2px 7px;
+        @include transition-ease;
+        &:hover,&.active,&.active{
+            border-radius: 50%;
+            background-image: linear-gradient(135deg, $color-blue 0%, $color-light-blue 100%);
+        }
+
+    }
+}
+.card-cnr {
+    column-count: 1;
+    column-gap: 1em;
+
+    @media (min-width: 768px) {
+        column-count: 4;
+        
+    }   
+    .card {
+        background-color: $color-white;
+        border-radius: 20px;
+        padding-bottom: 10px;
+        overflow: hidden;
+        transition: transform .2s;
+        display: inline-block;
+        margin: 0 0 1em;
+        width: 100%;
+        position: relative;
+        @media (max-width: 768px) {
+            width:auto;
+            margin:10px 20px;
+        }
+
+        &:hover {
+            box-shadow: 0px 3px 12px -2px $color-light-gray;
+            transform: scale(1.04);
+            position: relative;
+            z-index: 1;
+        }       
+        &.selectedCard{
+            background-image: linear-gradient(135deg, $color-blue 0%, $color-light-blue 100%);
+            .card__body {   
+                h3 {
+                    color: $color-white;
+                }    
+                h6 {
+                    color: $color-white;
+                }
+            }
+        }
+        &__image {
+            padding: 10px;
+
+            img {
+                width: 100%;
+                height: 150px;
+                border-radius: 5%;
+            }
+        }
+
+        &__title--wellington {
+            background: $color-yellow;
+            border-radius: 11.5px;
+            padding: 3px 5px;
+            text-transform: uppercase;
+            font-size: $xsmall-font-size;
+            font-family: sans-serif;
+            color: $color-white;
+        }
+
+        &__body {
+            margin: 0px 15px 18px;
+
+            h3 {
+                font-size: $medium-font-size;
+                line-height: 29px;
+                text-align: left;
+                color: $color-blue;
+                padding-top: 10px;
+            }
+
+            h6 {
+                font-size: $small-font-size;
+                line-height: 22px;
+                font-family: 'OpenSans';
+                font-weight: normal;
+                color: $color-gray;
+                padding-top: 10px;
+                font-weight: normal;
+            }
+        }
+
+        &__icons {
+            flex-direction: row;
+            display: flex;
+            float: right;
+
+            &--heart,
+            &--msg {
+                width: 22px;
+                height: 20px;
+                margin-right: 20px;
+            }
+
+            &--msg {
+                background: url("../img/message-square.svg") center no-repeat;
+            }
+
+            &--heart {
+                background: url("../img/heart.svg") center no-repeat;
+            }
+
+        }
+
+        &__checkbox {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right:20px;
+            cursor: pointer;
+        }
+
+        &__checkbox input {
+            opacity: 0;
+            z-index: 1;
+            position: relative;
+            width: 25px;
+            height: 26px;
+        }
+
+        &__checkmark {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 25px;
+            width: 25px;
+            background-color: transparent;
+            border: 2px solid $color-white;
+            border-radius: 50%
+        }
+
+        &__checkbox:hover input + span {
+            background-color: $color-bluishgreen;
+            border: 2px solid $color-bluishgreen;
+        }
+
+        &__checkbox input:checked + span {
+            background-color: $color-bluishgreen;
+            border: 2px solid $color-bluishgreen;
+        }
+        &__checkmark::after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        &__checkbox input:checked+ span::after {
+            display: block;
+        }
+        &__checkbox .card__checkmark::after {
+            left: 6px;
+            top: 3px;
+            width: 5px;
+            height: 10px;
+            border: 2px solid $color-white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+}

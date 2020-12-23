@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Travel</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="brand-logo"><img src="img/logo.svg" alt="St logo"></div>
+            <div class="menu-btn">
+                <span class="menu-btn__burger">
+                </span>
+            </div>
+        </header>
+        <div class="content">
+            <nav class="nav">
+                <ul class="menu-nav">
+                    <li class="menu-nav__item xs-hidden">
+                        <a href="#" class="menu-nav__item--link-logo ">
+                            <img src="img/logo.svg" alt="ST">
+                        </a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="#" class="menu-nav__item--link active">
+                            <i class="home"></i>
+                        </a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="#" class="menu-nav__item--link">
+                            <i class="briefcase"></i>
+                        </a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="#" class="menu-nav__item--link">
+                            <i class="compass"></i>
+                        </a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="#" class="menu-nav__item--link">
+                            <i class="bell"></i>
+                        </a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="#" class="menu-nav__item--link">
+                            <i class="gear"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                <section class="hero">
+                    <h2>Discover great places to visit</h2>
+                    <div class="hero__svg">
+                        <img src="./img/wave.svg" alt="img-name"/>
+                    </div>
+                    </section> 
+                    <div class="card-view__button">
+                        <span class="card-view__button--list active">
+                            <img src="./img/grid-view-icon.svg" alt="img-name"/>
+                        </span>
+                        <span class="card-view__button--grid ">
+                            <img src="./img/list-view-icon.svg" alt="img-name"/> 
+                        </span>                       
+                    </div>                       
+                    <section class="card-cnr">
+                        <div class="card">
+                            <div class="card__image">
+                               <img src="./img/kartoum.png" alt="card-img-name"/>  
+                            </div>
+                            <div class="card__checkbox">
+                                <input type="checkbox" onclick="toggleClass(this)"/>
+                                <span class="card__checkmark"></span>
+                            </div>
+                                        
+                            <div class="card__body">
+                                <span class="card__title--wellington">Wellington</span>
+                                <span class="card__title--wellington">Tianjin</span>
+                                <h3>Khartoum</h3>              
+                                <h6>Aenean lacinia bibendum nulla sed consectetur.</h6>
+                            </div>
+                            <div class="card__icons">
+                               <i class="card__icons--msg" ></i>
+                               <i class="card__icons--heart"></i>
+                            </div>
+                         </div> 
+                         <div class="card">
+                            <div class="card__image">
+                               <img src="./img/kartoum.png" alt="card-img-name"/>  
+                            </div>
+                            <div class="card__checkbox">
+                                <input type="checkbox" onclick="toggleClass(this)"/>
+                                <span class="card__checkmark"></span>
+                            </div>
+                                        
+                            <div class="card__body">
+                                <span class="card__title--wellington">Wellington</span>
+                                <span class="card__title--wellington">Tianjin</span>
+                                <h3>Fairbanks</h3>              
+                                <h6>Pellentesque ornare sem lacinia quam venenatis vestibulum.</h6>
+                            </div>
+                            <div class="card__icons">
+                               <i class="card__icons--msg" ></i>
+                               <i class="card__icons--heart"></i>
+                            </div>
+                         </div> 
+                         <div class="card">
+                            <div class="card__image">
+                               <img src="./img/kartoum.png" alt="card-img-name"/>  
+                            </div>
+                            <div class="card__checkbox">
+                                <input type="checkbox" onclick="toggleClass(this)"/>
+                                <span class="card__checkmark"></span>
+                            </div>
+                                        
+                            <div class="card__body">
+                                <span class="card__title--wellington">Wellington</span>
+                                <span class="card__title--wellington">Tianjin</span>
+                                <h3>Santa Clara</h3>              
+                                <h6>Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur.</h6>
+                            </div>
+                            <div class="card__icons">
+                               <i class="card__icons--msg" ></i>
+                               <i class="card__icons--heart"></i>
+                            </div>
+                         </div> 
+                         <div class="card">
+                            <div class="card__image">
+                               <img src="./img/kartoum.png" alt="card-img-name"/>  
+                            </div>
+                            <div class="card__checkbox">
+                                <input type="checkbox" onclick="toggleClass(this)"/>
+                                <span class="card__checkmark"></span>
+                            </div>
+                                        
+                            <div class="card__body">
+                                <span class="card__title--wellington">Wellington</span>
+                                <span class="card__title--wellington">Tianjin</span>
+                                <h3>Sofia                          </h3>              
+                                <h6>Pellentesque ornare sem lacinia quam venenatis vestibulum.</h6>
+                            </div>
+                            <div class="card__icons">
+                               <i class="card__icons--msg" ></i>
+                               <i class="card__icons--heart"></i>
+                            </div>
+                         </div> 
+                         <div class="card">
+                            <div class="card__image">
+                               <img src="./img/kartoum.png" alt="card-img-name"/>  
+                            </div>
+                            <div class="card__checkbox">
+                                <input type="checkbox" onclick="toggleClass(this)"/>
+                                <span class="card__checkmark"></span>
+                            </div>
+                                        
+                            <div class="card__body">
+                                <span class="card__title--wellington">Wellington</span>
+                                <span class="card__title--wellington">Tianjin</span>
+                                <h3>Bengaluru</h3>              
+                                <h6>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</h6>
+                            </div>
+                            <div class="card__icons">
+                               <i class="card__icons--msg" ></i>
+                               <i class="card__icons--heart"></i>
+                            </div>
+                         </div> 
+                         <div class="card">
+                            <div class="card__image">
+                               <img src="./img/kartoum.png" alt="card-img-name"/>  
+                            </div>
+                            <div class="card__checkbox">
+                                <input type="checkbox" onclick="toggleClass(this)"/>
+                                <span class="card__checkmark"></span>
+                            </div>
+                                        
+                            <div class="card__body">
+                                <span class="card__title--wellington">Wellington</span>
+                                <span class="card__title--wellington">Tianjin</span>
+                                <h3>Khartoum</h3>              
+                                <h6>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</h6>
+                            </div>
+                            <div class="card__icons">
+                               <i class="card__icons--msg" ></i>
+                               <i class="card__icons--heart"></i>
+                            </div>
+                         </div> 
+                         <div class="card">
+                            <div class="card__image">
+                               <img src="./img/kartoum.png" alt="card-img-name"/>  
+                            </div>
+                            <div class="card__checkbox">
+                                <input type="checkbox" onclick="toggleClass(this)"/>
+                                <span class="card__checkmark"></span>
+                            </div>
+                                        
+                            <div class="card__body">
+                                <span class="card__title--wellington">Wellington</span>
+                                <span class="card__title--wellington">Tianjin</span>
+                                <h3>Khartoum</h3>              
+                                <h6>Tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</h6>
+                            </div>
+                            <div class="card__icons">
+                               <i class="card__icons--msg" ></i>
+                               <i class="card__icons--heart"></i>
+                            </div>
+                         </div> 
+                         <div class="card">
+                            <div class="card__image">
+                               <img src="./img/kartoum.png" alt="card-img-name"/>  
+                            </div>
+                            <div class="card__checkbox">
+                                <input type="checkbox" onclick="toggleClass(this)"/>
+                                <span class="card__checkmark"></span>
+                            </div>
+                                        
+                            <div class="card__body">
+                                <span class="card__title--wellington">Wellington</span>
+                                <span class="card__title--wellington">Tianjin</span>
+                                <h3>Pune</h3>              
+                                <h6>
+                                    Mauris condimentum nibh, ut fermentum massa justo sit amet risus.</h6>
+                            </div>
+                            <div class="card__icons">
+                               <i class="card__icons--msg" ></i>
+                               <i class="card__icons--heart"></i>
+                            </div>
+                         </div>                                                
+                        
+                    </section>
+            </main>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
